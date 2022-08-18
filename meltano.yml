@@ -1,6 +1,16 @@
 version: 1
 default_environment: dev
 project_id: 528cbf5c-09da-43c1-82dd-67aa29afe816
+plugins:
+  extractors:
+  - name: tap-shopify
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/tap-shopify@v0.1.0
+  files:
+  - name: files-dbt
+    pip_url: git+https://github.com/Matatika/files-dbt@v1.0.x.0
+  - name: analyze-shopify
+    pip_url: git+https://github.com/Matatika/analyze-shopify@v0.1.0
 environments:
 - name: dev
 - name: staging
