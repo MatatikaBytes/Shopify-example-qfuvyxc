@@ -1,0 +1,33 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-shopify",
+  "namespace": "tap_shopify",
+  "variant": "matatika",
+  "docs": "https://www.matatika.com/docs/data-sources/tap-shopify/",
+  "repo": "https://github.com/Matatika/tap-shopify",
+  "pip_url": "git+https://github.com/Matatika/tap-shopify@v0.1.0",
+  "capabilities": [
+    "state"
+  ],
+  "settings": [
+    {
+      "name": "access_token",
+      "kind": "password",
+      "label": "Access Token",
+      "protected": false
+    },
+    {
+      "name": "store",
+      "kind": "string",
+      "label": "Store",
+      "protected": false
+    },
+    {
+      "name": "start_date",
+      "kind": "date_iso8601",
+      "label": "Start Date",
+      "protected": false,
+      "required": "false"
+    }
+  ]
+}
